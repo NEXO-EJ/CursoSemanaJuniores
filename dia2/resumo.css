@@ -1,0 +1,130 @@
+/* Atalhos úteis para o vscode:
+
+    Comentar o conteúdo selecionado: CONTROL+; (pode ser CONTROL+/ em notebooks)
+    Identar todo o conteúdo da página: SHIFT+ALT+F
+    Desfazer o que foi digitado: CONTROL+Z
+    Refazer o que foi desfeito: CONTROL+SHIFT+Z
+
+*/
+
+
+/* Estratégias de estilização de elementos */
+
+.class {} /* estiliza os elementos que possuem esta classe */
+
+ .class1.class2 { /* estiliza os elementos que pertencem a class1 e class2 ao mesmo tempo */
+} 
+
+
+ .class1 .class2 { /* estiliza os elementos da class2 que estam dentro de um elemento da class1 */
+}
+
+#id {} /* estiliza pelo id */
+
+p {} /* estiliza o elemento p */
+
+p.intro {} /* estiliza o elemento p com class 'intro' */
+
+div, p {} /* estiliza o elemento p e o elemento div */
+
+
+div p {} /* estiliza os elementos p dentro de uma div */
+
+
+
+div > p { /* estiliza os elementos p em que o elemento pai é uma div */
+    
+}
+
+div+p{
+} /* estiliza os elementos p precedido por uma div */
+
+div ~ p { /* estiliza todos os elementos p precedidos por uma div */
+}
+
+p:hover { /* estiliza o elemento p quando estiver com o mouse por cima dele */
+} 
+
+a:visited{ /* estiliza o elemento a quando o conteúdo dele já foi visitado */
+}
+
+
+/* Pricipais estilizações para fontes */
+
+p { 
+    font-family: Roboto, sans-serif; /* tipo da fonte */
+    font-size: 30px;  /* tamanho da fonte */  
+    font-weight: bold; /* Peso da fonte/largura das letras */
+    font-style: italic; /* Estilo da fonte */
+}
+
+/* Pricipais estilizações para background */
+
+div {
+    background-color: rgb(133, 30, 30); /* altera a cor de fundo */
+    background-image: url("./google.png"); /* aplica uma imagem como plano de fundo,
+                                              podendo ser um link da web ou o caminho 
+                                              relativo. Obs: Funciona com o background-color*/
+    background-repeat: no-repeat; /* Define se o plano de fundo se repetirá, podendo
+                                     se repetir no eixo y,x, os dois ou não repetir */
+    background-size: cover; /* define o tamanho do background, podendo ser utilzada
+                               alguma medida como px,vw,vh,%,etc ou pode ser definido
+                               o comportamento como cover, contain, auto, etc */
+    background-position: center; /* define a posição do plano de fundo dependendo do espaço
+                                    que estiver sobrando, podendo ficar para direita,esquerda,
+                                    cima, baixo ou centro*/
+}
+
+
+/* margin e padding 
+    margin é a margem do elemento. É o distânciamento em relação ao elemento pai;
+    padding é a margem interna do elemento. É o distânciamento do conteúdo em 
+    relação ao limte do elemento.
+*/
+
+div {
+    margin: 20px; /* coloca margem para todas as direções (cima,baixo,direita,esquerda) */
+    margin: 20px 10px; /* coloca 20px de margem para cima e baixo, e 10px de margem para direita e esquerda*/
+    margin: 20px 40px 10px; /* coloca 20px de margem para cima, 40px de margem para direita e esquerda, e 10px para baixo*/
+    margin: 20px 10px 30px 40px; /* coloca 20px de margem para cima, 10px de margem para direita, 
+                                    30px de margem para baixo, e 40px de margem para esquerda*/
+    /* Também pode-se chamar diretamente a direção que se deseja colocar a margem, segue exemplos abaixo*/
+    margin-top: 10px; /* cima */
+    margin-bottom: 10px; /* baixo */
+    margin-left: 10px; /* esquerda */
+    margin-right: 10px; /* direita */
+
+    /* Padding funciona da mesma forma que a margem em relação a ordem dos valores. */
+
+    padding: 20px; /* coloca padding para todas as direções (cima,baixo,direita,esquerda) */
+    padding: 20px 10px; /* coloca 20px de padding para cima e baixo, e 10px de padding para direita e esquerda*/
+    padding: 20px 40px 10px; /* coloca 20px de padding para cima, 40px de padding para direita e esquerda, e 10px para baixo*/
+    padding: 20px 10px 30px 40px; /* coloca 20px de padding para cima, 10px de padding para direita, 
+                                    30px de padding para baixo, e 40px de padding para esquerda*/
+
+    padding-top: 10px; /* cima */
+    padding-bottom: 10px; /* baixo */
+    padding-left: 10px; /* esquerda */
+    padding-right: 10px; /* direita */
+}
+
+/* Display flex 
+    o display:flex define que a tag se comportará de forma flexivel, herdando o tamanho da tag pai;    
+*/
+
+div {
+    display: flex; /* define a tag como flexivel */
+    flex-direction: column; /* define a direção em que a tag organizará os elementos dentro dela,
+                               podendo ser em coluna, linha, coluna-reversa, linha-reversa */ 
+    flex-wrap: wrap; /* define se o conteúdo passará para próxima linha quando faltar espaço na 
+                        direção em que está organizada */
+    justify-content: center; /* define o comportamento do conteúdo em relação ao eixo em que está
+                                organizado, podendo ser para o centro, começo,fim, espaçamento entre 
+                                elementos, espaçamento ao redor dos elementos */   
+    align-items: center;   /* define o comportamento do conteúdo em relação contrárioa ao eixo em que está
+                              organizado, podendo ser para o centro, começo,fim, espaçamento em elementos,
+                              espaçamento ao redor dos elementos */ 
+                                          
+
+}
+

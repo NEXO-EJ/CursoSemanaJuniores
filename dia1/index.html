@@ -1,41 +1,89 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-1.0">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <style>
+        img{
+            height: 300px;
+            width: 300px;
+        }
+    </style>
+    <title>Meu perfil</title>
+</head>
+<body>
+    
+    <!-- 
+        Anatomia de uma Tag HTML
 
-        <style>
-            img {
-                height: 300px;
-                width: 300px;
+            <h1> Olá, meu nome é Diego </h1>
+            |                   |       |  
+            abertura de uma tag |      Fechamento de uma tag
+                             conteúdo
 
-            }
-        </style>
-        <title>Meu perfil</title>
-    </head>
-    <body>
+            Algumas tags não exigem fechamento ou são fechadas nelas mesmas
+            Ex: <br>,  <link rel="stylesheet" href="./styles.css" />  
         
-        <h1>Meu perfil</h1>
-        <h4>Nome: Diego Saggioro</h4>
-        <h4>Idade: 23 anos</h4>
-        <h4>O que faço: Programador</h4>
-        <img src="https://scontent.frec5-1.fna.fbcdn.net/v/t1.0-9/73504673_2538423706224154_8366554828993724416_n.jpg?_nc_cat=111&ccb=2&_nc_sid=09cbfe&_nc_ohc=yipL3IbrNH8AX_-A_M0&_nc_ht=scontent.frec5-1.fna&oh=5c41fb94902dea7bec801a1c9204007c&oe=5FD038AD" alt="Foto facebook">
+        Corpo padrão do html5 automático
+            Ao digitar "html:5" no VSCODE, o editor oferece uma opção para gerar
+            um corpo padrão html.
 
-        <h4>Meus passa-tempos:</h4>
-        <span>Assistir netflix</span> <br>
-        <span>Jogar</span>
+        Cabeçalho
+            o cabeçalho é representado pela tag <head>, nele ficam configurações
+            da sua página html, como o charset que será usado, onde o arquivo css
+            está localizado, o viewport, o titulo, etc.
+        
+        Corpo
+            o corpo é representado pela tag <body>, nela fica todo o conteúdo do
+            seu site.
+
+        Tags de texto
+            Titulos
+                <h1> , <h2> , <h3> , <h4> , <h5>, <h6> 
+            Texto
+                <p>, <span>
+        
+        Tags de organizacionais
+            <section>, <div>, <nav>, <footer>
+        
+        Imagem
+            <img src="" alt="">   src é a referência da imagem, podendo ser o link de um 
+                                  site referenciando a imagem ou o caminho relativo
+                                  a pasta do site. Ex: "./imagem.png"
+
+        Tag de link
+            <a href="">    href pode referenciar uma página na web ou outro arquivo
+                           html seguindo o caminho da pasta.
+                           Ex: href="www.facebook.com", href="./pagina2.html"
+
+        Tag de botão
+            <button>   
+                
+        Tag de quebra de linha
+            <br>
+        
+    -->
+    <h1>Meu perfil</h1>
+
+    <h4>Nome: Diego Saggioro</h4>
+    <h4>Idade: 23 anos</h4>
+    <h4>O que faço: Programador</h4>
+    <img src="./facebookimg.jpg" alt="Foto facebook"> ->
+
+    <h4>Meus passa-tempos:</h4>
+    <span>Assistir netflix</span> <br>
+    <span>Jogar</span>
 
 
-        <section></section>
-        <div></div>
-        <nav></nav>
-        <footer></footer>
+    <section></section>
+    <div></div>
+    <nav></nav>
+    <footer></footer>
 
         
-        <a href="https://www.facebook.com/diego.saggiorobritolins"><button>Clique aqui</button></a>
+    <a href="https://www.facebook.com/diego.saggiorobritolins/"><button>aaaa</button></a>
 
         
-
-    </body>
+</body>
 </html>
- 
