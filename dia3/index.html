@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;900&display=swap" rel="stylesheet">
     <title>Site</title>
 </head>
 
@@ -14,36 +17,42 @@
         <a href="#contato">Contato</a>
     </nav>
     <section id="inicio">
-        <img src="./assets/abacaxi.png" alt="abacaxi" >
-        <img src="./assets/mulhercasaco.png" alt="mulher de casaco" >
-        <h1>Design is the solution for a problem</h1>
+        <img id="abacaxi" src="./assets/abacaxi.png" alt="abacaxi">
+        <img id="mulherdecasaco" src="./assets/mulhercasaco.png" alt="mulher de casaco">
+        <div class="justify-flex-end">
+            <h1 class="title-margin-top">Design is the solution for a problem</h1>
+        </div>
     </section>
-    <section>
-        <h1>Designer Gráfico</h1>
-        <img src="./assets/mrabacaxi.png" alt="mrabacaxi">
+    <section id="servicos">
+        <div class="justify-align-center">
+            <h1>Designer Gráfico</h1>
+        </div>
+
+        <div class="justify-align-center">
+            <img id="mrabacaxi" src="./assets/mrabacaxi.png" alt="mrabacaxi">
+        </div>
+
         <div>
-            <div>
-                <p class="bold">E aí, beleza!?</p>
-                <p>Me chamo
-                <p class="bold">Abacaxi Fashion.</p>
-                </p>
-                <p>Trabalho reforçando marcas e solucionando
+            <div class="abacaxi-texts">
+                <p class="bold white size25">E aí, beleza!?</p>
+                <p class="white size25">Me chamo <span class="bold white size25">Abacaxi Fashion.</span></p>
+                <p class="white size25 widthcut">Trabalho reforçando marcas e solucionando
                     problemas de comunicação, sempre busco as
                     principais novidades e técnicas para agregar
                     ao meu produto.
                 </p>
             </div>
-            <div>
-                <p class="bold">Branding</p>
-                <p class="bold">UX/UI</p>
-                <p class="bold">Identidade Visual</p>
-                <p class="bold">Social Media</p>
-                <p class="bold">Realidade Aumentada</p>
-                <p class="bold">Edição de Vídeo</p>
+            <div class="services-container">
+                <p class="bold white size27">Branding</p>
+                <p class="bold white size27">UX/UI</p>
+                <p class="bold white size27">Identidade Visual</p>
+                <p class="bold white size27">Social Media</p>
+                <p class="bold white size27">Realidade Aumentada</p>
+                <p class="bold white size27">Edição de Vídeo</p>
             </div>
         </div>
     </section>
-    <section>
+    <section id="contato">
         <div>
             <p class="bold">Fale com a gente!</p>
             <p class="bold">Email:</p>

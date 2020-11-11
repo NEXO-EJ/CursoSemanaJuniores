@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Gothic A1, sans-serif;
+}
+
+h1 {
+    font-size: 102px;
+    font-weight: 900;
+    color: white;
+    width: min-content;
+}
+
+nav {
+    height: 80px;
+    width: 100vw;
+    min-width: min-content;
+
+    background-color: #FFC700;
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+}
+
+nav a+a {
+    margin-left: 10%;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    font-weight: medium;
+    font-size: 39px;
+}
+
+section {
+    height: 100vh;
+    width: 100vw;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+#inicio {
+    background-color: #FFDB17;
+}
+
+#abacaxi {
+    width:30vw;
+}
+
+#mulherdecasaco {
+    width: 50%;
+}
+
+.justify-flex-end {
+    width: 36vw;    
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.title-margin-top {
+    margin-top: 40px;
+}
+
+#servicos {
+    background-image: url("./assets/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.justify-align-center {
+    width: 36vw;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#mrabacaxi {
+    height: 80%; 
+}
+
+.bold {
+    font-weight: 900;
+}
+
+.white {
+    color: white;
+}
+
+.size25 {
+    font-size: 25px;
+}
+
+.size27 {
+    font-size: 27px;
+}
+.abacaxi-texts {
+    padding-top: 12%;
+    height: 30vh;
+}
+
+.widthcut {
+    max-width: 400px;
+}
+
+.services-container {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    padding-left: 12%;
+}
+
+.services-container p+p {
+    margin-top: 4%;
+}
