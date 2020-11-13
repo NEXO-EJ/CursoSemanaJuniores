@@ -80,7 +80,6 @@ section {
     background-image: url("./assets/background.png");
     background-repeat: no-repeat;
     background-size: cover;
-    flex-wrap: wrap;
 
 }
 
@@ -193,16 +192,35 @@ section {
     h1 {
         font-size: 70px;
     }
+    .title-margin-top {
+        padding-right: 10px;
+    }
     
 }
 
+@media (max-width: 1025px){
+    #servicos{
+      flex-wrap: wrap;
+      height: min-content;
+      justify-content: center;
+    }
 
+    .services-container {
+        height: 20%;
+        padding-bottom: 30px;
+    }
+
+    #mrabacaxi {
+        width: 300px;
+    }
+}
 
 @media (max-width: 800px) {
     section {
         height: min-content;
         flex-wrap: wrap;
         min-width: 360px;
+        align-items: center;
     }
     nav {
         display: none;
@@ -215,9 +233,7 @@ section {
     #mulherdecasaco {
         width: 300px;
     }
-    #mrabacaxi {
-        width: 300px;
-    }
+    
 
     h1 {
         font-size: 50px;
@@ -236,8 +252,15 @@ section {
         margin-top: 30px;
     }
 
+    .services-texts-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .abacaxi-texts {
-        max-height: 240px;
+        max-height: 210px;
         padding: 0 15px;
     }
 
@@ -246,9 +269,7 @@ section {
         min-width: 300px;
     }
 
-    .services-container {
-        height: 20%;
-    }
+    
 
     .justify-center-column {
         margin-top: 20px;
@@ -268,5 +289,9 @@ section {
     .icons {
         display: flex;
         justify-content: space-around;
+    }
+
+    #homemflutuando {
+        margin-top: 20px;
     }
 }
