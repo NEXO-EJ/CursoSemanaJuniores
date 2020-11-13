@@ -41,10 +41,12 @@ section {
     
     display: flex;
     flex-direction: row;
+
 }
 
 #inicio {
     background-color: #FFDB17;
+    justify-content: space-around;
 }
 
 #abacaxi {
@@ -52,11 +54,11 @@ section {
 }
 
 #mulherdecasaco {
-    width: 50%;
+    width: min-content;
+
 }
 
 .justify-flex-end {
-    width: 36vw;    
     display: flex;
     justify-content: flex-end;
 
@@ -64,12 +66,22 @@ section {
 
 .title-margin-top {
     margin-top: 40px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.main-title{
+    height: 300px;
+    width: 45vw;
+
 }
 
 #servicos {
     background-image: url("./assets/background.png");
     background-repeat: no-repeat;
     background-size: cover;
+    flex-wrap: wrap;
+
 }
 
 .justify-align-center {
@@ -101,20 +113,160 @@ section {
 }
 .abacaxi-texts {
     padding-top: 12%;
-    height: 30vh;
+    height: 300px;
 }
 
 .widthcut {
+    min-width: 354px;
     max-width: 400px;
 }
 
-.services-container {
-    height: 70vh;
-    display: flex;
-    flex-direction: column;
-    padding-left: 12%;
+.introduction {
+    margin-bottom: 30px;
 }
 
-.services-container p+p {
-    margin-top: 4%;
+.services-container {
+    height: 40%;
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.services-container div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#contato {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.justify-center-column {
+    height: 80%;
+    width: 50%;
+
+    border: 1px solid;
+    border-radius: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.img-contact {
+    height: 50px;
+    width: 50px;
+}
+
+.size36 {
+    font-size: 36px;
+}
+
+.margin-contact-bottom {
+    margin-bottom: 25px;
+}
+
+#homemflutuando {
+    height: 80%;
+}
+
+@media (max-width: 1500px) {
+    #abacaxi {
+        display: none;
+    }
+    .size27 {
+        font-size: 20px;
+    }
+    .size25 {
+        font-size: 18px;
+    }
+
+    .size36 {
+        font-size: 27px;
+    }
+
+    h1 {
+        font-size: 70px;
+    }
+    
+}
+
+
+
+@media (max-width: 800px) {
+    section {
+        height: min-content;
+        flex-wrap: wrap;
+        min-width: 360px;
+    }
+    nav {
+        display: none;
+    }
+    
+    #inicio {
+        flex-direction: column-reverse;
+
+    }
+    #mulherdecasaco {
+        width: 300px;
+    }
+    #mrabacaxi {
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 50px;
+    }
+    .main-title {
+        width: 300px;
+        padding: 0 20px;
+    }
+
+    .justify-align-center{
+        width: 100vw;
+        
+    }
+
+    .title-services {
+        margin-top: 30px;
+    }
+
+    .abacaxi-texts {
+        max-height: 240px;
+        padding: 0 15px;
+    }
+
+    .widthcut {
+        height: auto;
+        min-width: 300px;
+    }
+
+    .services-container {
+        height: 20%;
+    }
+
+    .justify-center-column {
+        margin-top: 20px;
+        height: 80%;
+        width: 80%;
+    
+        border: none;
+        border-radius: 50px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+
+    .icons {
+        display: flex;
+        justify-content: space-around;
+    }
 }
